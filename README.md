@@ -35,8 +35,9 @@ Install the package and its dependencies:
 npm i @mantine/core@6 @mantine/hooks@6 @emotion/react mantine-contextmenu
 ```
 
-**⚠️ NOTE: Mantine-ContextMenu V6 is compatible with Mantine V6.**  
-**⏳ Mantine v7 support is in thwe roadmap. If you want to speed up the process, please consider [sponsoring my work](https://github.com/sponsors/icflorescu). ❤️**
+**⚠️ Mantine-ContextMenu V6 is compatible with Mantine V6.**  
+**⏳ Mantine v7 support is in the roadmap.**
+**❤️ If you want to speed up the process, please consider [sponsoring my work](https://github.com/sponsors/icflorescu).**
 
 If you're using Next.js, Vite, CRA, Remix or Gatsby, you might need to install additional dependencies. Please refer to Mantine's [getting started page](https://mantine.dev/pages/getting-started/) for more details.
 
