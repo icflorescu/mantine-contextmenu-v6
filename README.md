@@ -18,14 +18,14 @@ The "dark-theme aware" **context-menu** for your Mantine UI applications, built 
 
 - **Lightweight** - no expternal dependencies, [no bloat](https://bundlephobia.com/package/mantine-contextmenu)
 - **Dark-theme aware** - automatically adapts to the current Mantine theme
-- **[Simple API](https://icflorescu.github.io/mantine-contextmenu/getting-started)** - just wrap your application in the `ContextMenuProvider` component and use the hook-generated function in your code
-- **[Custom content support](https://icflorescu.github.io/mantine-contextmenu/examples/custom-content)** - use any Mantine component as context menu content
-- **[Highly customizable styling](https://icflorescu.github.io/mantine-contextmenu/examples/styling)** - use the `className`/`classNames`, `style`/`styles` and `sx` props to customize the context menu appearance
-- **[Written in Typescript and well-documented](https://icflorescu.github.io/mantine-contextmenu/type-definitions)** - with detailed JSDoc annotations for each exported function and component
+- **[Simple API](https://icflorescu.github.io/mantine-contextmenu-v6/getting-started)** - just wrap your application in the `ContextMenuProvider` component and use the hook-generated function in your code
+- **[Custom content support](https://icflorescu.github.io/mantine-contextmenu-v6/examples/custom-content)** - use any Mantine component as context menu content
+- **[Highly customizable styling](https://icflorescu.github.io/mantine-contextmenu-v6/examples/styling)** - use the `className`/`classNames`, `style`/`styles` and `sx` props to customize the context menu appearance
+- **[Written in Typescript and well-documented](https://icflorescu.github.io/mantine-contextmenu-v6/type-definitions)** - with detailed JSDoc annotations for each exported function and component
 
 ## Full documentation and examples
 
-Visit [icflorescu.github.io/mantine-contextmenu](https://icflorescu.github.io/mantine-contextmenu/) to view the full documentation and learn how to use it by browsing the list of usage examples.
+Visit [icflorescu.github.io/mantine-contextmenu](https://icflorescu.github.io/mantine-contextmenu-v6/) to view the full documentation and learn how to use it by browsing the list of usage examples.
 
 ## Quickstart
 
@@ -94,7 +94,7 @@ export default function GettingStartedExample() {
 }
 ```
 
-Make sure to browse the list of [usage examples](https://icflorescu.github.io/mantine-contextmenu/examples/basic-usage) to learn how to unleash the full power of Mantine ContextMenu.
+Make sure to browse the list of [usage examples](https://icflorescu.github.io/mantine-contextmenu-v6/examples/basic-usage) to learn how to unleash the full power of Mantine ContextMenu.
 
 ## Other useful resources
 
@@ -104,7 +104,7 @@ Make sure to browse the list of [usage examples](https://icflorescu.github.io/ma
 
 [![Contributors list](https://contrib.rocks/image?repo=icflorescu/mantine-contextmenu)](https://github.com/icflorescu/mantine-contextmenu/graphs/contributors)
 
-Want to [become a code contributor](https://icflorescu.github.io/mantine-contextmenu/contribute-and-support)?
+Want to [become a code contributor](https://icflorescu.github.io/mantine-contextmenu-v6/contribute-and-support)?
 
 ## Sponsor the project
 

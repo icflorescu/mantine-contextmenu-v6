@@ -26,8 +26,8 @@ const nextConfig = async (phase) => {
   };
 
   if (phase === 'phase-production-build' && process.env.GITHUB_PAGES === 'true') {
-    config.env.BASE_PATH = config.basePath = '/mantine-contextmenu';
-    config.env.CANONICAL_URL = 'https://icflorescu.github.io/mantine-contextmenu/';
+    config.env.BASE_PATH = config.basePath = '/mantine-contextmenu-v6';
+    config.env.CANONICAL_URL = 'https://icflorescu.github.io/mantine-contextmenu-v6/';
   }
 
   return withPWA(config);

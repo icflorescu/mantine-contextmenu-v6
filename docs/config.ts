@@ -23,7 +23,7 @@ export const NAVBAR_WIDTH = 300;
 export const NAVBAR_BREAKPOINT = 'md';
 
 export const AUTHOR_LINK = 'https://github.com/icflorescu';
-export const REPO_LINK = 'https://github.com/icflorescu/mantine-contextmenu';
+export const REPO_LINK = 'https://github.com/icflorescu/mantine-contextmenu-v6';
 export const LICENSE_LINK = `${REPO_LINK}/blob/main/LICENSE`;
 export const NPM_LINK = 'https://www.npmjs.com/package/mantine-contextmenu';
 export const SPONSOR_LINK = 'https://github.com/sponsors/icflorescu';
