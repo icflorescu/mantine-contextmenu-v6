@@ -5,7 +5,7 @@ import { getPageMeta } from '~/lib/page';
 
 export default function PageTitle({ of }: { of: string }) {
   const { title, description } = getPageMeta(of);
-  const titleWithSuffix = `${title} | Mantine DataTable`;
+  const titleWithSuffix = `${title} | Mantine ContextMenu`;
   const descriptionContent = description ?? SEO_DEFAULT_DESCRIPTION;
   return (
     <>
