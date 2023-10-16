@@ -23,7 +23,7 @@ export const NAVBAR_WIDTH = 300;
 export const NAVBAR_BREAKPOINT = 'md';
 
 export const AUTHOR_LINK = 'https://github.com/icflorescu';
-export const REPO_LINK = 'https://github.com/icflorescu/mantine-contextmenu';
+export const REPO_LINK = 'https://github.com/icflorescu/mantine-contextmenu-v6';
 export const LICENSE_LINK = `${REPO_LINK}/blob/main/LICENSE`;
 export const NPM_LINK = 'https://www.npmjs.com/package/mantine-contextmenu';
 export const SPONSOR_LINK = 'https://github.com/sponsors/icflorescu';
@@ -136,7 +136,7 @@ export const PAGES: ({ external?: true; title: string; color?: MantineColor; des
     path: 'mantine-v7-support',
     title: 'Mantine V7 support',
     description:
-      'Mantine ContextMenu v6.x only supports Mantine v6.x. Mantine v7.x support is on the roadmap. Please support my work on this project by sponsoring me on GitHub to speed up the development of Mantine ContextMenu v7.x',
+      'Mantine ContextMenu V6 only supports Mantine V6. Mantine V7 support is on the roadmap. Please support my work on this project by sponsoring me on GitHub to speed up the development of Mantine ContextMenu V7',
     color: 'pink',
     icon: IconBellFilled,
   },

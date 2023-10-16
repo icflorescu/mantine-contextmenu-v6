@@ -6,7 +6,7 @@ import { copyImageToClipboard, downloadImage, unsplashImages } from '~/lib/image
 
 const images = unsplashImages.slice(1);
 
-export default function ActionIconsExample() {
+export default function MultipleTargetsExample() {
   // example-start
   const showContextMenu = useContextMenu();
 

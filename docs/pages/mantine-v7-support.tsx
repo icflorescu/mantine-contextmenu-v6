@@ -12,13 +12,13 @@ export default function Page() {
     <Container>
       <PageTitle of={PATH} />
       <PageText warning>
-        Mantine ContextMenu v6.x supports <ExternalLink to="https://v6.mantine.dev/">Mantine v6.x</ExternalLink>.
+        Mantine ContextMenu V6 supports <ExternalLink to="https://v6.mantine.dev/">Mantine V6</ExternalLink>.
         <br />
-        <ExternalLink to={MANTINE_LINK}>Mantine v7.x</ExternalLink> support is on the roadmap. You can help speed up the
+        <ExternalLink to={MANTINE_LINK}>Mantine V7</ExternalLink> support is on the roadmap. You can help speed up the
         process by <ExternalLink to={SPONSOR_LINK}>sponsoring me on GitHub</ExternalLink>.
       </PageText>
       <PageText>
-        As most of you already know, Mantine v7 came up with{' '}
+        As most of you already know, Mantine V7 came up with{' '}
         <ExternalLink to="https://mantine.dev/changelog/7-0-0/">
           a significant number of breaking changes, most of them referring to how styling is implemented
         </ExternalLink>
