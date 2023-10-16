@@ -1,4 +1,8 @@
-# Mantine ContextMenu
+# Mantine ContextMenu V6
+
+**⚠️ Mantine-ContextMenu V6 is compatible with Mantine V6.**  
+**⏳ Mantine V7 support is in the roadmap.**
+**❤️ If you want to speed up the process, please consider [sponsoring my work](https://github.com/sponsors/icflorescu).**
 
 ![Publish NPM & deploy docs workflow](https://github.com/icflorescu/mantine-contextmenu/actions/workflows/publish-and-deploy.yml/badge.svg)  
 [![NPM version][npm-image]][npm-url]
@@ -32,12 +36,8 @@ Visit [icflorescu.github.io/mantine-contextmenu](https://icflorescu.github.io/ma
 Install the package and its dependencies:
 
 ```sh
-npm i @mantine/core@6 @mantine/hooks@6 @emotion/react mantine-contextmenu
+npm i @mantine/core@6 @mantine/hooks@6 @emotion/react mantine-contextmenu@6
 ```
-
-**⚠️ Mantine-ContextMenu V6 is compatible with Mantine V6.**  
-**⏳ Mantine v7 support is in the roadmap.**
-**❤️ If you want to speed up the process, please consider [sponsoring my work](https://github.com/sponsors/icflorescu).**
 
 If you're using Next.js, Vite, CRA, Remix or Gatsby, you might need to install additional dependencies. Please refer to Mantine's [getting started page](https://mantine.dev/pages/getting-started/) for more details.
 
@@ -129,7 +129,7 @@ Mentioning “Mantine ContextMenu” in your text would help me prioritize your 
 
 ## License
 
-The [MIT License](https://github.com/icflorescu/mantine-contextmenu/blob/master/LICENSE).
+The [MIT License](https://github.com/icflorescu/mantine-contextmenu-v6/blob/master/LICENSE).
 
 [npm-url]: https://npmjs.org/package/mantine-contextmenu
 [repo-url]: https://github.com/icflorescu/mantine-contextmenu

@@ -136,7 +136,7 @@ export const PAGES: ({ external?: true; title: string; color?: MantineColor; des
     path: 'mantine-v7-support',
     title: 'Mantine V7 support',
     description:
-      'Mantine ContextMenu v6.x only supports Mantine v6.x. Mantine v7.x support is on the roadmap. Please support my work on this project by sponsoring me on GitHub to speed up the development of Mantine ContextMenu v7.x',
+      'Mantine ContextMenu V6 only supports Mantine V6. Mantine V7 support is on the roadmap. Please support my work on this project by sponsoring me on GitHub to speed up the development of Mantine ContextMenu V7',
     color: 'pink',
     icon: IconBellFilled,
   },

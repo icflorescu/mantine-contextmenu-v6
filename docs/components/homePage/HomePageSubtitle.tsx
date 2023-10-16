@@ -46,9 +46,9 @@ export function HomePageSubtitle() {
       <Text className={classes.paragraph} color="dimmed" size="sm">
         <IconExclamationCircle className={cx(classes.startIcon, classes.exclamationIcon)} size={18} /> supports{' '}
         <ExternalLink className={classes.link} to="https://v6.mantine.dev/">
-          Mantine v6.x <IconExternalLink className={classes.linkIcon} size={14} />
+          Mantine V6 <IconExternalLink className={classes.linkIcon} size={14} />
         </ExternalLink>
-        ; support for Mantine v7.x <InternalLink to="/mantine-v7-support">is on the roadmap</InternalLink>.
+        ; support for Mantine V7 <InternalLink to="/mantine-v7-support">is on the roadmap</InternalLink>.
       </Text>
     </div>
   );

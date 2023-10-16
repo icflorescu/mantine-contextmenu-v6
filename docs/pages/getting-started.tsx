@@ -33,16 +33,16 @@ export default function Page({ code }: InferGetStaticPropsType<typeof getStaticP
         <ExternalLink to="https://mantine.dev/pages/getting-started/">Getting started with Mantine</ExternalLink> page.
       </PageText>
       <PageText>
-        Mantine ContextMenu depends on <Code>@mantine/core</Code> and <Code>@mantine/hooks</Code>.
+        Mantine ContextMenu V6 depends on <Code>@mantine/core@6</Code> and <Code>@mantine/hooks@6</Code>.
         <br />
         Mantine also depends on <Code>@emotion/react</Code> (and <Code>@emotion/server</Code> when used with SSR
         frameworks).
         <br />
       </PageText>
       <PageText warning>
-        Mantine ContextMenu v6.x supports <ExternalLink to="https://v6.mantine.dev/">Mantine v6.x</ExternalLink>.
+        Mantine ContextMenu V6 supports <ExternalLink to="https://v6.mantine.dev/">Mantine V6</ExternalLink>.
         <br />
-        <ExternalLink to={MANTINE_LINK}>Mantine v7.x</ExternalLink> support is on the roadmap. You can help speed up the
+        <ExternalLink to={MANTINE_LINK}>Mantine V7</ExternalLink> support is on the roadmap. You can help speed up the
         process by <ExternalLink to={SPONSOR_LINK}>sponsoring me on GitHub</ExternalLink>.
       </PageText>
       <PageText>Install the package and its dependencies:</PageText>
@@ -51,17 +51,17 @@ export default function Page({ code }: InferGetStaticPropsType<typeof getStaticP
           {
             title: 'yarn',
             language: 'bash',
-            content: 'yarn add @mantine/core@6 @mantine/hooks@6 @emotion/react mantine-contextmenu',
+            content: 'yarn add @mantine/core@6 @mantine/hooks@6 @emotion/react mantine-contextmenu@6',
           },
           {
             title: 'pnpm',
             language: 'bash',
-            content: 'pnpm i @mantine/core@6 @mantine/hooks@6 @emotion/react mantine-contextmenu',
+            content: 'pnpm i @mantine/core@6 @mantine/hooks@6 @emotion/react mantine-contextmenu@6',
           },
           {
             title: 'npm',
             language: 'bash',
-            content: 'npm i @mantine/core@6 @mantine/hooks@6 @emotion/react mantine-contextmenu',
+            content: 'npm i @mantine/core@6 @mantine/hooks@6 @emotion/react mantine-contextmenu@6',
           },
         ]}
       />
