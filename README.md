@@ -1,10 +1,10 @@
 # Mantine ContextMenu V6
 
 **⚠️ Mantine-ContextMenu V6 is compatible with Mantine V6.**  
-**⏳ Mantine V7 support is in the roadmap.**
+**⏳ Mantine V7 support is in the roadmap.**  
 **❤️ If you want to speed up the process, please consider [sponsoring my work](https://github.com/sponsors/icflorescu).**
 
-![Publish NPM & deploy docs workflow](https://github.com/icflorescu/mantine-contextmenu/actions/workflows/publish-and-deploy.yml/badge.svg)  
+![Publish NPM & deploy docs workflow](https://github.com/icflorescu/mantine-contextmenu-v6/actions/workflows/publish-and-deploy.yml/badge.svg)  
 [![NPM version][npm-image]][npm-url]
 [![License][license-image]][license-url]
 [![Stars][stars-image]][stars-url]
@@ -16,11 +16,11 @@
 
 The "dark-theme aware" **context-menu** for your Mantine UI applications, built by the creator of [Mantine DataTable](https://icflorescu.github.io/mantine-datatable/).
 
-[![Mantine ContextMenu](https://user-images.githubusercontent.com/581999/231230506-3278ea99-dfb3-4edc-ad67-d47f1626a298.png)](https://icflorescu.github.io/mantine-contextmenu/)
+[![Mantine ContextMenu](https://user-images.githubusercontent.com/581999/231230506-3278ea99-dfb3-4edc-ad67-d47f1626a298.png)](https://icflorescu.github.io/mantine-contextmenu-v6/)
 
 ## Features
 
-- **Lightweight** - no external dependencies, [no bloat](https://bundlephobia.com/package/mantine-contextmenu)
+- **Lightweight** - no external dependencies, [no bloat](https://bundlephobia.com/package/mantine-contextmenu@6)
 - **Dark-theme aware** - automatically adapts to the current Mantine theme
 - **[Simple API](https://icflorescu.github.io/mantine-contextmenu-v6/getting-started)** - just wrap your application in the `ContextMenuProvider` component and use the hook-generated function in your code
 - **[Custom content support](https://icflorescu.github.io/mantine-contextmenu-v6/examples/custom-content)** - use any Mantine component as context menu content
@@ -29,7 +29,7 @@ The "dark-theme aware" **context-menu** for your Mantine UI applications, built 
 
 ## Full documentation and examples
 
-Visit [icflorescu.github.io/mantine-contextmenu](https://icflorescu.github.io/mantine-contextmenu-v6/) to view the full documentation and learn how to use it by browsing the list of usage examples.
+Visit [icflorescu.github.io/mantine-contextmenu-v6](https://icflorescu.github.io/mantine-contextmenu-v6/) to view the full documentation and learn how to use it by browsing the list of usage examples.
 
 ## Quickstart
 
@@ -102,7 +102,7 @@ Make sure to browse the list of [usage examples](https://icflorescu.github.io/ma
 
 ## Code contributors
 
-[![Contributors list](https://contrib.rocks/image?repo=icflorescu/mantine-contextmenu)](https://github.com/icflorescu/mantine-contextmenu/graphs/contributors)
+[![Contributors list](https://contrib.rocks/image?repo=icflorescu/mantine-contextmenu-v6)](https://github.com/icflorescu/mantine-contextmenu-v6/graphs/contributors)
 
 Want to [become a code contributor](https://icflorescu.github.io/mantine-contextmenu-v6/contribute-and-support)?
 
@@ -132,16 +132,16 @@ Mentioning “Mantine ContextMenu” in your text would help me prioritize your 
 The [MIT License](https://github.com/icflorescu/mantine-contextmenu-v6/blob/master/LICENSE).
 
 [npm-url]: https://npmjs.org/package/mantine-contextmenu
-[repo-url]: https://github.com/icflorescu/mantine-contextmenu
-[stars-url]: https://github.com/icflorescu/mantine-contextmenu/stargazers
-[closed-issues-url]: https://github.com/icflorescu/mantine-contextmenu/issues?q=is%3Aissue+is%3Aclosed
+[repo-url]: https://github.com/icflorescu/mantine-contextmenu-v6
+[stars-url]: https://github.com/icflorescu/mantine-contextmenu-v6/stargazers
+[closed-issues-url]: https://github.com/icflorescu/mantine-contextmenu-v6/issues?q=is%3Aissue+is%3Aclosed
 [license-url]: LICENSE
 [npm-image]: https://img.shields.io/npm/v/mantine-contextmenu.svg?style=flat-square
 [license-image]: http://img.shields.io/npm/l/mantine-contextmenu.svg?style=flat-square
 [downloads-image]: http://img.shields.io/npm/dm/mantine-contextmenu.svg?style=flat-square
 [stars-image]: https://img.shields.io/github/stars/icflorescu/mantine-contextmenu?style=flat-square
-[last-commit-image]: https://img.shields.io/github/last-commit/icflorescu/mantine-contextmenu?style=flat-square
-[closed-issues-image]: https://img.shields.io/github/issues-closed-raw/icflorescu/mantine-contextmenu?style=flat-square
-[language-image]: https://img.shields.io/github/languages/top/icflorescu/mantine-contextmenu?style=flat-square
+[last-commit-image]: https://img.shields.io/github/last-commit/icflorescu/mantine-contextmenu-v6?style=flat-square
+[closed-issues-image]: https://img.shields.io/github/issues-closed-raw/icflorescu/mantine-contextmenu-v6?style=flat-square
+[language-image]: https://img.shields.io/github/languages/top/icflorescu/mantine-contextmenu-v6?style=flat-square
 [sponsor-image]: https://img.shields.io/badge/sponsor-violet?style=flat-square
 [sponsor-url]: https://github.com/sponsors/icflorescu
