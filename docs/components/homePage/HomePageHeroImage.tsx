@@ -55,9 +55,9 @@ export default function HomePageHeroImage() {
         },
         { key: 'divider' },
         {
-          key: 'clear',
+          key: 'reset',
           icon: <IconX size={16} />,
-          title: 'Clear filter',
+          title: 'Reset filter',
           disabled: filter === 'none',
           onClick: () => setFilter('none'),
         },

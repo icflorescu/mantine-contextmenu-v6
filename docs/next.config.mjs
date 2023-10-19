@@ -4,9 +4,9 @@ import pkg from '../package/package.json' assert { type: 'json' };
 const withPWA = pwa({ dest: 'public' });
 
 const nextConfig = async (phase) => {
-  const { downloads: INITIAL_NPM_DOWNLOADS } = await fetch(
-    'https://api.npmjs.org/downloads/point/last-month/mantine-contextmenu'
-  ).then((res) => res.json());
+  const { downloads } = await fetch('https://api.npmjs.org/downloads/point/last-month/mantine-contextmenu')
+    .then((res) => res.json())
+    .catch(() => ({ downloads: 0 }));
 
   /**
    * @type {import('next').NextConfig}
@@ -21,7 +21,7 @@ const nextConfig = async (phase) => {
     env: {
       PACKAGE_VERSION: pkg.version,
       BASE_PATH: '',
-      INITIAL_NPM_DOWNLOADS,
+      INITIAL_NPM_DOWNLOADS: String(downloads),
     },
   };
 
