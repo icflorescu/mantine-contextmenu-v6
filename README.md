@@ -1,7 +1,7 @@
 # Mantine ContextMenu V6
 
-**⚠️ Mantine-ContextMenu V6 is compatible with [Mantine V6](https://v6.mantine.dev).**  
-**💡 If you're using Mantine V7, please use [Mantine-ContextMenu V7](https://icflorescu.github.io/mantine-contextmenu/).**  
+**⚠️ Mantine ContextMenu V6 is compatible with [Mantine V6](https://v6.mantine.dev).**  
+**💡 If you're using Mantine V7, please use [Mantine ContextMenu V7](https://icflorescu.github.io/mantine-contextmenu/).**  
 
 ![Publish NPM & deploy docs workflow](https://github.com/icflorescu/mantine-contextmenu-v6/actions/workflows/publish-and-deploy.yml/badge.svg)  
 [![NPM version][npm-image]][npm-url]

@@ -2,7 +2,6 @@ import { Text, createStyles } from '@mantine/core';
 import { IconDiscountCheck, IconExclamationCircle, IconExternalLink } from '@tabler/icons-react';
 import ExternalLink from '~/components/ExternalLink';
 import { MANTINE_DATATABLE_LINK } from '~/config';
-import InternalLink from '../InternalLink';
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -44,11 +43,12 @@ export function HomePageSubtitle() {
         <br />
       </Text>
       <Text className={classes.paragraph} color="dimmed" size="sm">
-        <IconExclamationCircle className={cx(classes.startIcon, classes.exclamationIcon)} size={18} /> supports{' '}
-        <ExternalLink className={classes.link} to="https://v6.mantine.dev/">
-          Mantine V6 <IconExternalLink className={classes.linkIcon} size={14} />
+        <IconExclamationCircle className={cx(classes.startIcon, classes.exclamationIcon)} size={18} /> this version
+        supports Mantine V6; the new version supporting Mantine V7{' '}
+        <ExternalLink to="https://icflorescu.github.io/mantine-contextmenu/">
+          is available here <IconExternalLink className={classes.linkIcon} size={14} />
         </ExternalLink>
-        ; support for Mantine V7 <InternalLink to="/mantine-v7-support">is on the roadmap</InternalLink>.
+        .
       </Text>
     </div>
   );
