@@ -14,12 +14,16 @@ const useStyles = createStyles((theme) => ({
   },
   image: {
     objectFit: 'cover',
+    transition: 'transform 0.2s',
   },
   flipVertical: {
     transform: 'scaleX(-1)',
   },
   flipHorizontal: {
     transform: 'scaleY(-1)',
+  },
+  flipBoth: {
+    transform: 'scale(-1, -1)',
   },
   attribution: {
     position: 'absolute',
@@ -61,8 +65,9 @@ export default function Picture({
     <Box className={classes.root} onContextMenu={onContextMenu}>
       <Image
         className={cx(classes.image, {
-          [classes.flipHorizontal]: flipHorizontal,
-          [classes.flipVertical]: flipVertical,
+          [classes.flipBoth]: flipVertical && flipHorizontal,
+          [classes.flipHorizontal]: flipHorizontal && !flipVertical,
+          [classes.flipVertical]: flipVertical && !flipHorizontal,
         })}
         src={src}
         alt={`Picture by ${name} | Mantine ContextMenu`}

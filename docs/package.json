@@ -9,7 +9,7 @@
     "lint": "eslint . --ext=.ts,.tsx && tsc --noEmit"
   },
   "dependencies": {
-    "@ducanh2912/next-pwa": "^9.7.1",
+    "@ducanh2912/next-pwa": "^9.7.2",
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
     "@mantine/core": "^6.0.21",
@@ -20,15 +20,15 @@
     "@tabler/icons-react": "^2.39.0",
     "lodash": "^4.17.21",
     "mantine-contextmenu": "*",
-    "next": "^13.5.4",
+    "next": "^13.5.6",
     "next-sitemap": "^4.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.199",
-    "@types/node": "^20.8.6",
-    "@types/react": "^18.2.28",
+    "@types/lodash": "^4.14.200",
+    "@types/node": "^20.8.7",
+    "@types/react": "^18.2.30",
     "typescript": "^5.2.2",
     "webpack": "^5.89.0"
   }
