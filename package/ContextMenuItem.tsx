@@ -1,8 +1,8 @@
-import { Box, Text, UnstyledButton, createStyles, px, type MantineColor } from '@mantine/core';
-import { MouseEventHandler, useRef, useState } from 'react';
+import { Box, Text, UnstyledButton, createStyles, px, type MantineColor, type MantineNumberSize } from '@mantine/core';
+import { useRef, useState, type MouseEventHandler } from 'react';
 import { ContextMenu } from './ContextMenu';
-import { ContextMenuContent, ContextMenuItemOptions } from './types';
-import { WithRequiredProperty } from './utils';
+import type { ContextMenuContent, ContextMenuItemOptions } from './types';
+import type { WithRequiredProperty } from './utils';
 
 const useStyles = createStyles((theme, { color }: { color?: MantineColor }) => {
   const verticalPadding = px(theme.spacing.sm) / 2;
@@ -50,8 +50,12 @@ export function ContextMenuItem({
   disabled,
   onClick,
   onHide,
+  borderRadius,
   items,
-}: WithRequiredProperty<Omit<ContextMenuItemOptions, 'key'>, 'title'> & { onHide: () => void }) {
+}: WithRequiredProperty<Omit<ContextMenuItemOptions, 'key'>, 'title'> & {
+  borderRadius: MantineNumberSize | undefined;
+  onHide: () => void;
+}) {
   const ref = useRef<HTMLButtonElement>(null);
   const [submenuPosition, setSubmenuPosition] = useState<{ x: number; y: number } | null>(null);
 
@@ -100,7 +104,14 @@ export function ContextMenuItem({
           </Box>
         )}
       </UnstyledButton>
-      {submenuPosition && <ContextMenu content={items as ContextMenuContent} onHide={onHide} {...submenuPosition} />}
+      {submenuPosition && (
+        <ContextMenu
+          content={items as ContextMenuContent}
+          borderRadius={borderRadius}
+          onHide={onHide}
+          {...submenuPosition}
+        />
+      )}
     </div>
   );
 }
