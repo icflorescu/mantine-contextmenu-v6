@@ -92,6 +92,7 @@ export function ContextMenu({
                 title={title ?? humanize(key)}
                 onClick={onClick}
                 onHide={onHide}
+                borderRadius={borderRadius}
                 items={items}
                 {...otherOptions}
               />
