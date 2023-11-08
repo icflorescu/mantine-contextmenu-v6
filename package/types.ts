@@ -124,6 +124,9 @@ export type ContextMenuItemOptions = {
 
 export type ContextMenuContent = ContextMenuItemOptions[] | ((close: () => void) => JSX.Element);
 
+/**
+ * Show context menu function
+ */
 export type ShowContextMenuFunction = (
   /**
    * Context menu content - either an array of context menu items
@@ -136,3 +139,14 @@ export type ShowContextMenuFunction = (
    */
   options?: ContextMenuOptions
 ) => MouseEventHandler;
+
+/**
+ * Hide context menu function
+ */
+export type HideContextMenuFunction = () => void;
+
+export interface ShowContextMenuFunctionObject extends ShowContextMenuFunction {
+  showContextMenu: ShowContextMenuFunction;
+  hideContextMenu: HideContextMenuFunction;
+  isContextMenuVisible: boolean;
+}
