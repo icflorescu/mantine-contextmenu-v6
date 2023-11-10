@@ -2,10 +2,10 @@ import { Code, Container } from '@mantine/core';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import CodeBlock from '~/components/CodeBlock';
 import PageNavigation from '~/components/PageNavigation';
-import PageTitle from '~/components/PageTitle';
 import PageText from '~/components/PageText';
-import readCodeExample from '~/lib/readCodeExample';
+import PageTitle from '~/components/PageTitle';
 import ImperativeHidingExample from '~/examples/ImperativeHidingExample';
+import readCodeExample from '~/lib/readCodeExample';
 
 const PATH = 'examples/imperative-hiding';
 
@@ -22,13 +22,21 @@ export default function Page({ code }: InferGetStaticPropsType<typeof getStaticP
         <Code>Escape</Code> key, scrolls the or resizes the browser window.
       </PageText>
       <PageText>
-        However, you can also hide the context menu <em>imperatively</em> by calling the <Code>hideContextMenu</Code>{' '}
-        function returned by the <Code>useContextMenu</Code> hook.
+        However, you can also hide the context menu <em>imperatively</em> by destructuring the result returned by the{' '}
+        <Code>useContextMenu</Code> hook into:
       </PageText>
-      <PageText>
-        The <Code>useContextMenu</Code> hook also returns an <Code>isContextMenuVisible</Code> boolean that you can use
-        to determine whether the context menu is currently visible.
-      </PageText>
+      <ul>
+        <li>
+          <Code>showContextMenu</Code> → a function that can be used to show the context menu;
+        </li>
+        <li>
+          <Code>hideContextMenu</Code> → a function that can be used to hide the context menu;
+        </li>
+        <li>
+          <Code>isContextMenuVisible</Code> → a <Code>boolean</Code> representing whether the context menu is currently
+          visible or not.
+        </li>
+      </ul>
       <PageText>
         In the example below, we’ll hide the context menu automatically when the user presses the <Code>H</Code> key,
         his mouse cursor leaves the page, or after five seconds have elapsed:

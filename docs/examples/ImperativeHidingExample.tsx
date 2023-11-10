@@ -1,4 +1,3 @@
-// example-start
 import { useHotkeys, usePageLeave, useTimeout } from '@mantine/hooks';
 import { useContextMenu } from 'mantine-contextmenu';
 import { useEffect } from 'react';
@@ -44,4 +43,3 @@ export default function ImperativeHidingExample() {
     />
   );
 }
-// example-end
