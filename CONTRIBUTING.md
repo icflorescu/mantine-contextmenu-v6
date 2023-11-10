@@ -13,4 +13,4 @@ If you want to implement a new feature or improve an existing one, make sure to 
 
 ## Code contributors
 
-[![Contributors list](https://contrib.rocks/image?repo=icflorescu/mantine-contextmenu)](https://github.com/icflorescu/mantine-contextmenu/graphs/contributors)
+[![Contributors list](https://contrib.rocks/image?repo=icflorescu/mantine-contextmenu-v6)](https://github.com/icflorescu/mantine-contextmenu/graphs/contributors-v6)
