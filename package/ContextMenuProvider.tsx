@@ -11,7 +11,6 @@ defaultMenuContextValue.isContextMenuVisible = false;
 
 const MenuContext = createContext<ShowContextMenuFunctionObject>(defaultMenuContextValue);
 
-
 /**
  * Provider that allows to show a context menu anywhere in your application.
  * If you wrap your application with this provider, you can use the `useContextMenu` hook
@@ -60,7 +59,10 @@ export function ContextMenuProvider({
 }
 
 /**
- * Hook returning a function that shows a context menu.
+ * Hook returning a function object that shows a context menu.
+ * The returned object can also be destructured into
+ * `showContextMenu`, `hideContextMenu` functions and a `isContextMenuVisible` boolean,
+ * which can be used for finer-grained control (such as imperatively hiding the context menu).
  */
 export function useContextMenu() {
   return useContext(MenuContext);

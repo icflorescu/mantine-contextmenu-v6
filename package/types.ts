@@ -145,6 +145,9 @@ export type ShowContextMenuFunction = (
  */
 export type HideContextMenuFunction = () => void;
 
+/**
+ * Context menu function object with `showContextMenu`, `hideContextMenu` and `isContextMenuVisible` keys
+ */
 export interface ShowContextMenuFunctionObject extends ShowContextMenuFunction {
   showContextMenu: ShowContextMenuFunction;
   hideContextMenu: HideContextMenuFunction;
