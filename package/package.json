@@ -55,8 +55,8 @@
   "devDependencies": {
     "@mantine/core": "^6.0.21",
     "@mantine/hooks": "^6.0.21",
-    "@types/react": "^18.2.31",
-    "@types/react-dom": "^18.2.14",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
     "esbuild": "^0.19.5",
     "react": "^18.2.0",
     "typescript": "^5.2.2"
