@@ -107,6 +107,11 @@ export const PAGES: ({ external?: true; title: string; color?: MantineColor; des
         title: 'Submenus (nested menus)',
         description: 'Example: How to create Mantine ContextMenu Submenus (nested menus)',
       },
+      {
+        path: 'imperative-hiding',
+        title: 'Imperative hiding',
+        description: `Example: Mantine ContextMenu hides itself automatically when the user scrolls the page or clicks outside of it, but you can also hide it imperatively`,
+      },
     ],
   },
   {
