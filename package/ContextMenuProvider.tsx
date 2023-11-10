@@ -1,9 +1,15 @@
 import { createContext, useContext, useState } from 'react';
 import { ContextMenuInstanceOptions } from './ContextMenu';
 import { ContextMenuPortal } from './ContextMenuPortal';
-import type { ContextMenuOptions, ContextMenuProviderProps, ShowContextMenuFunction } from './types';
+import type { ContextMenuOptions, ContextMenuProviderProps, ShowContextMenuFunctionObject } from './types';
 
-const MenuContext = createContext<ShowContextMenuFunction>(() => () => undefined);
+const defaultMenuContextValue = () => () => undefined;
+
+defaultMenuContextValue.showContextMenu = defaultMenuContextValue;
+defaultMenuContextValue.hideContextMenu = () => undefined;
+defaultMenuContextValue.isContextMenuVisible = false;
+
+const MenuContext = createContext<ShowContextMenuFunctionObject>(defaultMenuContextValue);
 
 /**
  * Provider that allows to show a context menu anywhere in your application.
@@ -18,11 +24,11 @@ export function ContextMenuProvider({
 }: ContextMenuProviderProps) {
   const [data, setData] = useState<(ContextMenuInstanceOptions & ContextMenuOptions) | null>(null);
 
-  const destroy = () => {
+  const hideContextMenu = () => {
     setData(null);
   };
 
-  const showContextMenu: ShowContextMenuFunction = (content, options) => (e) => {
+  const showContextMenu: ShowContextMenuFunctionObject = (content, options) => (e) => {
     e.preventDefault();
     e.stopPropagation();
     setData({
@@ -40,16 +46,23 @@ export function ContextMenuProvider({
     });
   };
 
+  showContextMenu.showContextMenu = showContextMenu;
+  showContextMenu.hideContextMenu = hideContextMenu;
+  showContextMenu.isContextMenuVisible = !!data;
+
   return (
     <MenuContext.Provider value={showContextMenu}>
       {children}
-      {data && <ContextMenuPortal onHide={destroy} {...data} />}
+      {data && <ContextMenuPortal onHide={hideContextMenu} {...data} />}
     </MenuContext.Provider>
   );
 }
 
 /**
- * Hook returning a function that shows a context menu.
+ * Hook returning a function object that shows a context menu.
+ * The returned object can also be destructured into
+ * `showContextMenu`, `hideContextMenu` functions and a `isContextMenuVisible` boolean,
+ * which can be used for finer-grained control (such as imperatively hiding the context menu).
  */
 export function useContextMenu() {
   return useContext(MenuContext);
