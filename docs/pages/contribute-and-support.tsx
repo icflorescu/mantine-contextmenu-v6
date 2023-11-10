@@ -75,9 +75,9 @@ export default function Page() {
       </PageText>
       <PageSubtitle value="List of code contributors" />
       <Box my="xl">
-        <ExternalLink to={`${REPO_LINK}/graphs/contributors`}>
+        <ExternalLink to={`${REPO_LINK}/graphs/contributors-v6`}>
           <img
-            src={`https://contrib.rocks/image?repo=icflorescu/mantine-contextmenu&columns=${contributorCols}`}
+            src={`https://contrib.rocks/image?repo=icflorescu/mantine-contextmenu-v6&columns=${contributorCols}`}
             alt="Mantine ContextMenu contributors"
           />
         </ExternalLink>
